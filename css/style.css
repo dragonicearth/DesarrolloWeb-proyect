@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif; }
+
+.bg-body-gradient {
+  background-color: #4158D0;
+  background: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%);
+  background-repeat: no-repeat; }
+
+.btn-style-nav {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform .5s; }
+
+.btn-style-nav:hover {
+  color: #ffc107;
+  transition: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(0.68, 0.05, 0.46, 1.02), left 0.2s 0.2s ease-out; }
+
+.bi-heart-pulse {
+  font-size: 2rem;
+  color: #ffc107; }

@@ -1,0 +1,49 @@
+@import "components/variables";
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+@mixin btn-style-nav {
+    color: $btn-color-nav;
+    font-weight: $btn-color-nav-hover-bold;
+    text-transform: $btn-color-nav-up;
+    transition: transform .5s;
+}
+
+@mixin btn-color-nav-hover {
+    color: $btn-color-nav-hover;
+}
+
+// style general
+
+* {
+    @include reset
+}
+
+// style body
+
+.bg-body-gradient {
+    background-color: $bg-body-color;
+    background: $bg-body-gradient;
+    background-repeat: no-repeat;
+}
+
+// style nav
+
+.btn-style-nav {
+    @include btn-style-nav();
+}
+
+.btn-style-nav:hover {
+    @include btn-color-nav-hover();
+    transition: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(0.68, 0.05, 0.46, 1.02), left 0.2s 0.2s ease-out;
+}
+
+.bi-heart-pulse {
+    font-size: 2rem;
+    color: $color-orang;
+}
