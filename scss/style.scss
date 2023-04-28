@@ -6,11 +6,10 @@
 }
 
 // style body
-.bg-body-gradient {
+
+.bg-body {
     font-family: 'Oxygen', sans-serif;
-    background: #000000;
-    background-repeat: no-repeat;
-    height: auto;
+    background-color: #663736;
 }
 
 // style nav
@@ -30,19 +29,24 @@
 
 // style main
 
-.grid-welcome {  display: grid;
+.grid-welcome {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
-  }
-  
-  .grid-text-welcome { 
-    @include center;
-    grid-area: 1 / 2 / 2 / 3; 
+    background-image:$bg-gif-welcome;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-  
 
+.grid-text-welcome {
+    @include center;
+    grid-area: 2 / 2 / 3 / 3;
+    color: whitesmoke;
+    width: 75%;
+}
 
 .span-title {
     background-color: $color-orang;
@@ -89,6 +93,8 @@
 }
 
 
+
+
 // Media queries
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -100,6 +106,12 @@
 
     .grid-nav {
         width: 100%;
+    }
+
+    .bg-color-mobile {
+        background-color: $color-orang;
+        color: black;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     }
 }
 

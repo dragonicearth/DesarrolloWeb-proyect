@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
-.bg-body-gradient {
+.bg-body {
   font-family: 'Oxygen', sans-serif;
-  background: #000000;
-  background-repeat: no-repeat;
-  height: auto; }
+  background-color: #663736; }
 
 .btn-style-nav {
   color: #000000;
@@ -28,7 +26,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 0px 0px;
-  grid-auto-flow: row; }
+  grid-auto-flow: row;
+  background-image: url(https://media4.giphy.com/media/MaJU1YQ6B5YVnf39Ie/giphy.gif?cid=ecf05e47wehmq4z1138x0ejdaptkbqffoz4thrm8kriz5ch4&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .grid-text-welcome {
   justify-content: center;
@@ -36,7 +38,9 @@
   justify-items: center;
   align-items: center;
   text-align: center;
-  grid-area: 1 / 2 / 2 / 3; }
+  grid-area: 2 / 2 / 3 / 3;
+  color: whitesmoke;
+  width: 75%; }
 
 .span-title {
   background-color: #ffc107;
@@ -76,7 +80,11 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .grid-nav {
-    width: 100%; } }
+    width: 100%; }
+  .bg-color-mobile {
+    background-color: #ffc107;
+    color: black;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .grid-welcome {

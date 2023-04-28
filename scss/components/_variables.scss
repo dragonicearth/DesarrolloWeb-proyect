@@ -7,6 +7,9 @@ $btn-color-nav-hover-bold: bold;
 $bg-img-nav: url("paper.gif");
 $bg-img-nav-op: 0.3;
 
+// variable grid welcome
+$bg-gif-welcome: url(https://media4.giphy.com/media/MaJU1YQ6B5YVnf39Ie/giphy.gif?cid=ecf05e47wehmq4z1138x0ejdaptkbqffoz4thrm8kriz5ch4&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+
 // @media breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
@@ -44,3 +47,7 @@ $breakpoint-xxl: 1400px;
     align-items: center;
     text-align: center;
 }
+
+
+// extend
+
