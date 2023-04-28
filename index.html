@@ -30,107 +30,79 @@
 <body>
 
   <header>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg p-3 mb-lg-5 bg-black border border-bottom-0 border-warning rounded ">
 
-        <div class="container">
+    <nav class="navbar navbar-expand-lg p-3 mb-lg-5 bg-white">
+      <div class="container">
+        <a class="navbar-brand animate__animated animate__pulse" href="./index.html">
+          <i class="bi bi-heart-pulse">Sport+</i>
+        </a>
 
-          <a class="navbar-brand animate__animated animate__pulse" href="./index.html">
-            <i class="bi bi-heart-pulse shadow-icon">Sport+</i>
-          </a>
+        <button class="navbar-toggler bg-warning " type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="bi bi-caret-down-fill"></span>
+        </button>
 
-          <button class="navbar-toggler bg-warning " type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="bi bi-caret-down-fill"></span>
-          </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
 
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link animate__animated animate__flipInX text-center change-color"
+                aria-current="page" href="./index.html">HOME</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link btn-style-nav animate__animated animate__flipInX text-center bg-color-mobile rounded mb-1"
-                  aria-current="page" href="./index.html">Home</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link animate__animated animate__flipInX text-center change-color"
+                href="./pages/about.html">ABOUT</a>
+            </li>
+            <li class="nav-item change-color">
+              <a class="nav-link animate__animated animate__flipInX text-center change-color"
+                href="./pages/shop.html">SHOP</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link btn-style-nav animate__animated animate__flipInX text-center bg-color-mobile rounded mb-1"
-                  href="./pages/about.html">About</a>
-              </li>
+            <li class="nav-item dropdown animate__animated animate__flipInX">
+              <a class="nav-link dropdown-toggle text-center change-color" role="button"
+                data-bs-toggle="dropdown" aria-expanded="true">PLANS</a>
 
-              <li class="nav-item">
-                <a class="nav-link btn-style-nav animate__animated animate__flipInX text-center bg-color-mobile rounded mb-1"
-                  href="./pages/shop.html">Shop</a>
-              </li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-center" href="./pages/profesionals.html"><i
+                      class="bi bi-arrow-return-right change-color"> PROFESIONALS</i></a></li>
+                <li><a class="dropdown-item text-center" href="./pages/workout.html"><i
+                      class="bi bi-arrow-return-right change-color">WORKOUT</i></a>
+                </li>
+              </ul>
 
-              <li class="nav-item dropdown animate__animated animate__flipInX btn-style-nav">
-                <a class="nav-link dropdown-toggle text-center bg-color-mobile rounded btn-style-nav mb-1" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="true">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link animate__animated animate__flipInX text-center change-color"
+                href="./pages/contact.html">CONTACT</a>
+            </li>
 
-                <ul class="dropdown-menu bg-black btn-style-nav">
-                  <li><a class="dropdown-item btn-style-nav text-center bg-black" href="./pages/nutritionists.html"><i
-                        class="bi bi-arrow-return-right bg-black"> Nutritionists</i></a></li>
-
-                  <li><a class="dropdown-item btn-style-nav text-center bg-black" href="./pages/workout.html"><i
-                        class="bi bi-arrow-return-right bg-black">
-                        Workout</i></a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link btn-style-nav animate__animated animate__flipInX text-center bg-color-mobile rounded mb-1"
-                  href="./pages/contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </nav>
-
-      <div class="grid-welcome rounded">
-        <div class="grid-text-welcome">
-          <h1>nothing's <span class="span-title" data-aos="flip-up" data-aos-easing="ease-in-sine">impossible</span>
-          </h1>
-          <hr class="line-shadow">
-          <p class="grid-p-welcome">
-            ¡En Sport+ estamos comprometidos con tu bienestar! Ofrecemos planes de ejercicios, dietas saludables
-            y productos de calidad para ayudarte a lograr tus objetivos de forma efectiva. ¡Únete a nosotros
-            y juntos crearemos una rutina de bienestar a tu medida!
-          </p>
+          </ul>
         </div>
       </div>
-
+    </nav>
     </div>
   </header>
 
-  <main class="container-main">
+  <main>
 
-    <div class="grid-plus">
-      <div class="div1">
-        <h2>CRECEMOS JUNTOS</h2>
+    <div class="cards">
+      <div class="card">
+        <h2>TITULO</h2>
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur porro inventore distinctio, 
+          accusamus fuga numquam culpa tenetur mollitia error sit sed illo soluta fugit sapiente est tempore quis perferendis possimus?/p>
       </div>
-      <div class="div2" data-aos="flip-left"> </div>
-      <div class="div3" data-aos="flip-up"> </div>
-      <div class="div4" data-aos="flip-right"> </div>
-      <div class="div5">
-        <h3 class="style-h3-desc">Ofrecé a tus colaboradores un plan de bienestar integral y sé parte de la comunidad que busca mejorar su
-          estilo de vida.</h3>
-      </div>
-      <div class="div6">
-        <h3 class="style-h3-desc">Unite a nuestra red de beneficios y formá parte de los comercios que apoyan el deporte.</h3>
-      </div>
-      <div class="div7">
-        <h3 class="style-h3-desc">Integrate a la plataforma digital que reúne entidades del deporte interesados en comercializar sus
-          servicios.</h3>
-      </div>
-      <div class="grid-plus-btn-1"> <button class="button-5">Contacta</button></div>
-      <div class="grid-plus-btn-2"> <button class="button-5">Ver más</button></div>
-      <div class="grid-plus-btn-3"> <button class="button-5">Ver más</button></div>
+      <div class="card">TWO</div>
+      <div class="card">THREE</div>
     </div>
+
 
   </main>
 
+  <footer>
+  </footer>
 
 
 

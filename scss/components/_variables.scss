@@ -1,27 +1,7 @@
 // variables nav 
-$color-orang: #ffc107;
-$btn-color-nav: #6B747C;
-$btn-color-nav-hover: #ffc107;
-$btn-color-nav-up: uppercase;
-$btn-color-nav-hover-bold: bold;
-$bg-img-nav: url("paper.gif");
-$bg-img-nav-op: 0.3;
+$c-org: #ffc107;
+$c-blk: #171717;
 
-// shadow-icon
-$shadowIcon: -1px 1px 50px rgba(255,193,7,1);
-
-// variable grid welcome
-$bg-gif-welcome: url(https://media4.giphy.com/media/MaJU1YQ6B5YVnf39Ie/giphy.gif?cid=ecf05e47wehmq4z1138x0ejdaptkbqffoz4thrm8kriz5ch4&ep=v1_gifs_related&rid=giphy.gif&ct=g);
-
-// @media breakpoints
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1400px;
-
-
-// mixins
 
 // mixin general
 @mixin reset {
@@ -31,18 +11,6 @@ $breakpoint-xxl: 1400px;
 }
 
 // mixin nav
-@mixin btn-style-nav {
-    color: $btn-color-nav;
-    font-weight: $btn-color-nav-hover-bold;
-    text-transform: $btn-color-nav-up;
-    transition: transform .5s;
-}
-
-@mixin btn-color-nav-hover {
-    color: $btn-color-nav-hover;
-}
-
-// center variables
 @mixin center {
     justify-content: center;
     align-content: center;

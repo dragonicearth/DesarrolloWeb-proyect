@@ -7,16 +7,7 @@ body {
   font-family: 'Oxygen', sans-serif;
   background-color: #171717; }
 
-.btn-style-nav {
-  color: #6B747C;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: transform .5s; }
-
-.shadowIcon {
-  text-shadow: -1px 1px 50px #ffc107; }
-
-.btn-style-nav:hover {
+.change-color:hover {
   color: #ffc107;
   transition: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(0.68, 0.05, 0.46, 1.02), left 0.2s 0.2s ease-out; }
 
@@ -24,211 +15,22 @@ body {
   font-size: 2rem;
   color: #ffc107; }
 
-.container-main {
-  padding-right: 480px;
-  padding-left: 480px;
-  margin-right: auto;
-  margin-left: auto; }
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem; }
 
-.grid-welcome {
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  filter: drop-shadow(-47px 12px 107px #000000);
-  background-image: url(https://media4.giphy.com/media/MaJU1YQ6B5YVnf39Ie/giphy.gif?cid=ecf05e47wehmq4z1138x0ejdaptkbqffoz4thrm8kriz5ch4&ep=v1_gifs_related&rid=giphy.gif&ct=g);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
-.grid-text-welcome {
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  grid-area: 2 / 2 / 3 / 3;
-  color: whitesmoke;
-  text-justify: distribute; }
-
-.span-title {
-  background-color: #ffc107;
-  opacity: .3;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  transition: .5s;
-  text-transform: uppercase;
-  color: black;
-  opacity: .3; }
-
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
-.line-shadow {
-  border: 2px solid gray; }
-
-.grid-p-welcome {
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center; }
-
-.grid-plus {
+.cards h2 {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr) repeat(2, 3fr) repeat(2, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 7px; }
-
-.div1 {
-  grid-area: 2 / 3 / 3 / 4;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  color: #ffc107; }
-
-.div2 {
-  grid-area: 3 / 2 / 4 / 3;
-  background-image: url(https://media4.giphy.com/media/kGQ3wwaBzyZsUjnpDX/200w.webp?cid=ecf05e47v7yxz32w2iogcmzto2tcs7aod2b93nuz0zcyd8e6&ep=v1_gifs_related&rid=200w.webp&ct=g);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 30px;
-  border: 3px solid #ffc107; }
-
-.div3 {
-  grid-area: 3 / 3 / 4 / 4;
-  background-image: url(https://media0.giphy.com/media/WioI4xQReOvJn31IYL/200w.webp?cid=ecf05e47v7yxz32w2iogcmzto2tcs7aod2b93nuz0zcyd8e6&ep=v1_gifs_related&rid=200w.webp&ct=g);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 30px;
-  border: 3px solid #ffc107; }
-
-.div4 {
-  grid-area: 3 / 4 / 4 / 5;
-  background-image: url(https://media3.giphy.com/media/94m74ZNRoi8Wjmzl52/giphy.webp?cid=ecf05e47v7yxz32w2iogcmzto2tcs7aod2b93nuz0zcyd8e6&ep=v1_gifs_related&rid=giphy.webp&ct=g);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 30px;
-  border: 3px solid #ffc107; }
-
-.div5 {
-  grid-area: 4 / 2 / 5 / 3;
-  font-size: 20px; }
-
-.div6 {
-  grid-area: 4 / 3 / 5 / 4;
-  font-size: 20px; }
-
-.div7 {
-  grid-area: 4 / 4 / 5 / 5;
-  font-size: 20px; }
-
-.grid-plus-btn-1 {
-  grid-area: 5 / 2 / 6 / 3;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center; }
-
-.grid-plus-btn-2 {
-  grid-area: 5 / 3 / 6 / 4;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center; }
-
-.grid-plus-btn-3 {
-  grid-area: 5 / 4 / 6 / 5;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center; }
-
-.style-h3-desc {
-  font-size: 20px;
-  color: gray;
-  text-align: center;
-  margin-top: 25px; }
-
-.button-5 {
-  border-radius: 30px;
-  padding: 10px;
-  background-color: #ffc107;
-  border: 1px solid transparent;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  color: #fff;
-  font-size: 16px;
-  width: 200px; }
-
-.button-5:hover,
-.button-5:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px; }
-
-.button-5:hover {
-  transform: translateY(-1px); }
-
-.button-5:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0); }
-
-@media (min-width: 320px) and (max-width: 425px) {
-  .grid-welcome {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr); }
-  .mb-nav {
-    margin-top: 2; }
-  .grid-nav {
-    width: 100%; }
-  .bg-color-mobile {
-    background-color: #ffc107;
-    color: black;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
-  .container-main {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 0;
-    margin-left: 0; } }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .grid-welcome {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-  .grid-nav {
-    width: 100%; } }
-
-@media (min-width: 1025px) and (max-width: 1400px) {
-  .grid-welcome {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr); }
-  .grid-nav {
-    width: 100%; } }
-
-@media (min-width: 1400px) {
-  .grid-nav {
-    width: 90%; } }
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
