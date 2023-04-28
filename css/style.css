@@ -5,7 +5,7 @@
 
 .bg-body-gradient {
   font-family: 'Oxygen', sans-serif;
-  background: #fafafa;
+  background: #000000;
   background-repeat: no-repeat;
   height: auto; }
 
@@ -26,22 +26,17 @@
 .grid-welcome {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 20px;
-  background-image: linear-gradient(to bottom, #f5f6fc85, #ffc107), url(../img/bg-1-index.jpg);
-  background-size: cover;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row; }
+
+.grid-text-welcome {
   justify-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
-  text-align: center; }
-
-.grid-nav {
-  grid-area: 1 / 1 / 2 / 4; }
-
-.grid-text-welcome {
-  grid-area: 2 / 2 / 3 / 3; }
+  text-align: center;
+  grid-area: 1 / 2 / 2 / 3; }
 
 .span-title {
   background-color: #ffc107;
