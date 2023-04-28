@@ -7,9 +7,9 @@
 
 // style body
 
-.bg-body {
+body {
     font-family: 'Oxygen', sans-serif;
-    background-color: #663736;
+    background-color: #171717;
 }
 
 // style nav
@@ -17,9 +17,14 @@
     @include btn-style-nav();
 }
 
+.shadowIcon {
+    text-shadow: $shadowIcon
+}
+
 .btn-style-nav:hover {
     @include btn-color-nav-hover();
     transition: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(0.68, 0.05, 0.46, 1.02), left 0.2s 0.2s ease-out;
+
 }
 
 .bi-heart-pulse {
@@ -29,29 +34,44 @@
 
 // style main
 
+.container-main {
+    padding-right: 480px;
+    padding-left: 480px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .grid-welcome {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
-    background-image:$bg-gif-welcome;
-    background-position: center;
+    filter: drop-shadow(-47px 12px 107px #000000);
+    background-image: $bg-gif-welcome;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .grid-text-welcome {
+
     @include center;
     grid-area: 2 / 2 / 3 / 3;
     color: whitesmoke;
-    width: 75%;
+    text-justify: distribute;
 }
 
 .span-title {
     background-color: $color-orang;
+    opacity: .3;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     transition: .5s;
+    text-transform: uppercase;
+    color: black;
+    opacity: .3;
+
 }
 
 @-webkit-keyframes tracking-in-expand {
@@ -93,6 +113,110 @@
 }
 
 
+.grid-plus {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr) repeat(2, 3fr) repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 7px;
+}
+
+.div1 {
+    grid-area: 2 / 3 / 3 / 4;
+    @include center;
+    color: $color-orang;
+}
+
+.div2 {
+    grid-area: 3 / 2 / 4 / 3;
+    background-image: url(https://media4.giphy.com/media/kGQ3wwaBzyZsUjnpDX/200w.webp?cid=ecf05e47v7yxz32w2iogcmzto2tcs7aod2b93nuz0zcyd8e6&ep=v1_gifs_related&rid=200w.webp&ct=g);
+    @include bgcenter;
+    border-radius: 30px;
+    border: 3px solid $color-orang;
+}
+
+.div3 {
+    grid-area: 3 / 3 / 4 / 4;
+    background-image: url(https://media0.giphy.com/media/WioI4xQReOvJn31IYL/200w.webp?cid=ecf05e47v7yxz32w2iogcmzto2tcs7aod2b93nuz0zcyd8e6&ep=v1_gifs_related&rid=200w.webp&ct=g);
+    @include bgcenter;
+    border-radius: 30px;
+    border: 3px solid $color-orang;
+}
+
+.div4 {
+    grid-area: 3 / 4 / 4 / 5;
+    background-image: url(https://media3.giphy.com/media/94m74ZNRoi8Wjmzl52/giphy.webp?cid=ecf05e47v7yxz32w2iogcmzto2tcs7aod2b93nuz0zcyd8e6&ep=v1_gifs_related&rid=giphy.webp&ct=g);
+    @include bgcenter;
+    border-radius: 30px;
+    border: 3px solid $color-orang;
+}
+
+.div5 {
+    grid-area: 4 / 2 / 5 / 3;
+    font-size: 20px;
+}
+
+.div6 {
+    grid-area: 4 / 3 / 5 / 4;
+    font-size: 20px;
+}
+
+.div7 {
+    grid-area: 4 / 4 / 5 / 5;
+    font-size: 20px;
+}
+
+.grid-plus-btn-1 {
+    grid-area: 5 / 2 / 6 / 3;
+    @include center;
+}
+
+.grid-plus-btn-2 {
+    grid-area: 5 / 3 / 6 / 4;
+    @include center;
+}
+
+.grid-plus-btn-3 {
+    grid-area: 5 / 4 / 6 / 5;
+    @include center;
+}
+
+.style-h3-desc{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+
+.button-5 {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: $color-orang;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  .button-5:hover,
+  .button-5:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  }
+  
+  .button-5:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+  }
+
 
 
 // Media queries
@@ -104,6 +228,10 @@
         grid-template-rows: repeat(1, 1fr);
     }
 
+    .mb-nav {
+        margin-top: 2;
+    }
+
     .grid-nav {
         width: 100%;
     }
@@ -113,6 +241,14 @@
         color: black;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     }
+
+    .container-main {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
