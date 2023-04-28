@@ -1,39 +1,19 @@
 @import "components/variables";
 
-@mixin reset {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oxygen', sans-serif;
-}
-
-@mixin btn-style-nav {
-    color: $btn-color-nav;
-    font-weight: $btn-color-nav-hover-bold;
-    text-transform: $btn-color-nav-up;
-    transition: transform .5s;
-}
-
-@mixin btn-color-nav-hover {
-    color: $btn-color-nav-hover;
-}
-
 // style general
-
 * {
     @include reset
 }
 
 // style body
-
 .bg-body-gradient {
-    background-color: $bg-body-color;
+    font-family: 'Oxygen', sans-serif;
     background: $bg-body-gradient;
     background-repeat: no-repeat;
+    height: auto;
 }
 
 // style nav
-
 .btn-style-nav {
     @include btn-style-nav();
 }
@@ -46,4 +26,115 @@
 .bi-heart-pulse {
     font-size: 2rem;
     color: $color-orang;
+}
+
+// style main
+
+.grid-welcome {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    background-image: linear-gradient(to bottom, #f5f6fc85, #ffc107),url(../img/bg-1-index.jpg);
+    background-size: cover;
+    @include center;
+}
+
+.grid-nav {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.grid-text-welcome {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.span-title {
+    background-color: $color-orang;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    transition: .5s;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.line-shadow {
+    border: 2px solid gray;
+}
+
+.grid-p-welcome {
+    @include center;
+}
+
+
+// Media queries
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .grid-welcome {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .grid-nav {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .grid-welcome {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .grid-nav {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+    .grid-welcome {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .grid-nav {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .grid-nav {
+        width: 90%;
+    }
 }

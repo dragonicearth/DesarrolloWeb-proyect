@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Oxygen', sans-serif; }
+  box-sizing: border-box; }
 
 .bg-body-gradient {
-  background-color: #4158D0;
-  background: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%);
-  background-repeat: no-repeat; }
+  font-family: 'Oxygen', sans-serif;
+  background: #fafafa;
+  background-repeat: no-repeat;
+  height: auto; }
 
 .btn-style-nav {
   color: #000000;
@@ -22,3 +22,81 @@
 .bi-heart-pulse {
   font-size: 2rem;
   color: #ffc107; }
+
+.grid-welcome {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  background-image: linear-gradient(to bottom, #f5f6fc85, #ffc107), url(../img/bg-1-index.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center; }
+
+.grid-nav {
+  grid-area: 1 / 1 / 2 / 4; }
+
+.grid-text-welcome {
+  grid-area: 2 / 2 / 3 / 3; }
+
+.span-title {
+  background-color: #ffc107;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  transition: .5s; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+.line-shadow {
+  border: 2px solid gray; }
+
+.grid-p-welcome {
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center; }
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .grid-welcome {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr); }
+  .grid-nav {
+    width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-welcome {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  .grid-nav {
+    width: 100%; } }
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .grid-welcome {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr); }
+  .grid-nav {
+    width: 100%; } }
+
+@media (min-width: 1400px) {
+  .grid-nav {
+    width: 90%; } }

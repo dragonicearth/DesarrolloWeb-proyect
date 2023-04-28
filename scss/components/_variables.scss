@@ -1,12 +1,49 @@
 // varible body
-$bg-body-color: #4158D0;
-$bg-body-gradient: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
+$bg-body-gradient: #fafafa;  
 
 // variables nav 
 $color-orang: #ffc107;
-$btn-color-nav:#000000;
-$btn-color-nav-hover:#ffc107;
-$btn-color-nav-up:uppercase;
-$btn-color-nav-hover-bold:bold;
-$bg-img-nav:url("paper.gif");
-$bg-img-nav-op:0.3;
+$btn-color-nav: #000000;
+$btn-color-nav-hover: #ffc107;
+$btn-color-nav-up: uppercase;
+$btn-color-nav-hover-bold: bold;
+$bg-img-nav: url("paper.gif");
+$bg-img-nav-op: 0.3;
+
+// @media breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+
+// mixins
+
+// mixin general
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// mixin nav
+@mixin btn-style-nav {
+    color: $btn-color-nav;
+    font-weight: $btn-color-nav-hover-bold;
+    text-transform: $btn-color-nav-up;
+    transition: transform .5s;
+}
+
+@mixin btn-color-nav-hover {
+    color: $btn-color-nav-hover;
+}
+
+// center variables
+@mixin center {
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
