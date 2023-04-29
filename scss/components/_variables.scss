@@ -34,8 +34,10 @@ $nav-animate: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        >.title-g-1, .title-g-2, .title-g-3{
+        >.title-g-1 ,.title-g-2 ,.title-g-3{
             text-align: center;
+            text-shadow:1px 1px 1px #171717;
+            font-size: 20px;
         }
     }
 }
