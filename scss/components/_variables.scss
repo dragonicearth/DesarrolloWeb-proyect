@@ -27,4 +27,15 @@ $nav-animate: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(
 }
 
 
-// extend
+// extend galery
+.u-container-galery{
+    @extend .container-galery;
+    > .bg-1, .bg-2 ,.bg-3{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        >.title-g-1, .title-g-2, .title-g-3{
+            text-align: center;
+        }
+    }
+}
