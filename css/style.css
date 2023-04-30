@@ -185,6 +185,21 @@ body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body
   text-transform: uppercase;
   padding: 3px; }
 
+.container-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke; }
+  .container-work h1 {
+    text-align: center;
+    color: #171717;
+    margin: 5px; }
+  .container-work img {
+    width: 95%;
+    height: auto;
+    margin: 5px; }
+
 * {
   margin: 0;
   padding: 0;
