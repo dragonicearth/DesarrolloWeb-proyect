@@ -1,0 +1,33 @@
+@import "./variables";
+
+.conteiner-help{
+    @include center;
+    .help-1{
+        h1{
+            color: $c-org;
+        }
+        p{
+            color: wheat;
+            padding: 20px;
+        }
+    }
+    .help-2{
+        h2{
+            color: $c-org;
+        }
+        p{
+            color: wheat;
+            padding: 20px;
+        }
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .conteiner-help{
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+}
