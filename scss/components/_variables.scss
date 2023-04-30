@@ -33,4 +33,6 @@ $nav-animate: opacity 0.25s ease, transform 0.25s ease, width 0.3s cubic-bezier(
 %style-h2 {
     color: $c-org;
     text-shadow: 1px 1px 1px #171717;
+    text-transform: uppercase;
+    padding: 3px;
 }
