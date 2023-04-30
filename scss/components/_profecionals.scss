@@ -1,1 +1,109 @@
-@import "components/variables";
+@import "./variables";
+
+
+.centered {
+
+    p {
+        color: $c-org;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .card1 {
+            border-radius: 5px;
+            width: 100%;
+            height: 150px;
+            margin: 5px;
+            @include bgcenter;
+            background-image: url(https://getfyt.s3.amazonaws.com/users_avatar/16827/avatar_thumbnailer/2016-11-21t233128468799-20161026_134726.jpg.300x300_q85.jpg);
+
+            p {
+                margin-top: 120px;
+                color: $c-org;
+                background-color: $c-blk;
+                text-transform: uppercase;
+            }
+        }
+
+        .card2 {
+            border-radius: 5px;
+            width: 100%;
+            height: 150px;
+            margin: 5px;
+            @include bgcenter;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRehuWJumFfg2tzt5Sdw5fy50566R8KlrJsbg&usqp=CAU);
+
+            p {
+                margin-top: 120px;
+                color: $c-org;
+                background-color: $c-blk;
+                text-transform: uppercase;
+            }
+        }
+
+        .card3 {
+            border-radius: 5px;
+            width: 100%;
+            height: 150px;
+            margin: 5px;
+            @include bgcenter;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTm2sVCD4W67VmtRxnscish4sCFQywVSaaFA&usqp=CAU);
+
+            p {
+                margin-top: 120px;
+                color: $c-org;
+                background-color: $c-blk;
+                text-transform: uppercase;
+            }
+        }
+
+        .card4 {
+            border-radius: 5px;
+            width: 100%;
+            height: 150px;
+            margin: 5px;
+            @include bgcenter;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHi4_jBe1Rcxa33kPF5jJHtNIyWoWNA42bTKcngdEPKyXpjb1lVCs0N3MFEjdq-HcCSH4&usqp=CAU);
+
+            p {
+                margin-top: 120px;
+                color: $c-org;
+                background-color: $c-blk;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .centered {
+        .cards {
+            flex-direction: column;
+
+            .card1 {
+                background-size: contain;
+            }
+
+            .card2 {
+                background-size: contain;
+            }
+
+            .card3 {
+                background-size: contain;
+            }
+
+            .card4 {
+                background-size: contain;
+            }
+        }
+    }
+}

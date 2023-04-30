@@ -101,6 +101,84 @@ body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body
   text-transform: uppercase;
   padding: 3px; }
 
+.centered p {
+  color: #ffc107;
+  text-align: center;
+  margin-top: 20px; }
+
+.centered .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; }
+  .centered .cards .card1 {
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://getfyt.s3.amazonaws.com/users_avatar/16827/avatar_thumbnailer/2016-11-21t233128468799-20161026_134726.jpg.300x300_q85.jpg); }
+    .centered .cards .card1 p {
+      margin-top: 120px;
+      color: #ffc107;
+      background-color: #171717;
+      text-transform: uppercase; }
+  .centered .cards .card2 {
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRehuWJumFfg2tzt5Sdw5fy50566R8KlrJsbg&usqp=CAU); }
+    .centered .cards .card2 p {
+      margin-top: 120px;
+      color: #ffc107;
+      background-color: #171717;
+      text-transform: uppercase; }
+  .centered .cards .card3 {
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTm2sVCD4W67VmtRxnscish4sCFQywVSaaFA&usqp=CAU); }
+    .centered .cards .card3 p {
+      margin-top: 120px;
+      color: #ffc107;
+      background-color: #171717;
+      text-transform: uppercase; }
+  .centered .cards .card4 {
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHi4_jBe1Rcxa33kPF5jJHtNIyWoWNA42bTKcngdEPKyXpjb1lVCs0N3MFEjdq-HcCSH4&usqp=CAU); }
+    .centered .cards .card4 p {
+      margin-top: 120px;
+      color: #ffc107;
+      background-color: #171717;
+      text-transform: uppercase; }
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .centered .cards {
+    flex-direction: column; }
+    .centered .cards .card1 {
+      background-size: contain; }
+    .centered .cards .card2 {
+      background-size: contain; }
+    .centered .cards .card3 {
+      background-size: contain; }
+    .centered .cards .card4 {
+      background-size: contain; } }
+
 body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body main .container-galery .bg-3 h2, body main .container-rend .rend-bg-1 h2, body main .container-shop div h2 {
   color: #ffc107;
   text-shadow: 1px 1px 1px #171717;
