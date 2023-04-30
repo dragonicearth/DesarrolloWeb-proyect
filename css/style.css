@@ -54,6 +54,59 @@ body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body
     margin-top: 15px;
     flex-direction: column; } }
 
+body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body main .container-galery .bg-3 h2, body main .container-rend .rend-bg-1 h2, body main .container-shop div h2 {
+  color: #ffc107;
+  text-shadow: 1px 1px 1px #171717;
+  text-transform: uppercase;
+  padding: 3px; }
+
+.conteinet-form .formu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 30px; }
+  .conteinet-form .formu div input {
+    background-color: #ffc107;
+    color: #171717;
+    margin-top: 5px;
+    border: 1px #ffc107 solid;
+    border-radius: 30px; }
+  .conteinet-form .formu div .enctra-quest {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    color: wheat; }
+  .conteinet-form .formu div div {
+    color: wheat;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px; }
+    .conteinet-form .formu div div .chek-form {
+      margin-right: 15px; }
+  .conteinet-form .formu .send-btn {
+    background-color: #ffc107;
+    color: #171717;
+    border: 1px #ffc107 solid;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 100px; }
+
+body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body main .container-galery .bg-3 h2, body main .container-rend .rend-bg-1 h2, body main .container-shop div h2 {
+  color: #ffc107;
+  text-shadow: 1px 1px 1px #171717;
+  text-transform: uppercase;
+  padding: 3px; }
+
+body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body main .container-galery .bg-3 h2, body main .container-rend .rend-bg-1 h2, body main .container-shop div h2 {
+  color: #ffc107;
+  text-shadow: 1px 1px 1px #171717;
+  text-transform: uppercase;
+  padding: 3px; }
+
 * {
   margin: 0;
   padding: 0;

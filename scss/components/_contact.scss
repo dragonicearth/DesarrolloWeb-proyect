@@ -1,1 +1,49 @@
-@import "components/variables";
+@import "./variables";
+
+.conteinet-form {
+
+    .formu {
+        @include center;
+        flex-direction: column;
+        margin-top: 30px;
+
+        div {
+            input {
+                background-color: $c-org;
+                color: $c-blk;
+                margin-top: 5px;
+                border: 1px $c-org solid;
+                border-radius: 30px;
+            }
+        }
+
+        div {
+            .enctra-quest {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 10px;
+                color: wheat;
+            }
+
+            div {
+                color: wheat;
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 5px;
+
+                .chek-form {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .send-btn {
+            background-color: $c-org;
+            color: $c-blk;
+            border: 1px $c-org solid;
+            border-radius: 30px;
+            margin-top: 30px;
+            width: 100px;
+        }
+    }
+}
