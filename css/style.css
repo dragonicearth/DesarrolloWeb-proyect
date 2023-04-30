@@ -4,6 +4,27 @@ body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body
   text-transform: uppercase;
   padding: 3px; }
 
+body main .container-galery .bg-1 h2, body main .container-galery .bg-2 h2, body main .container-galery .bg-3 h2, body main .container-rend .rend-bg-1 h2, body main .container-shop div h2 {
+  color: #ffc107;
+  text-shadow: 1px 1px 1px #171717;
+  text-transform: uppercase;
+  padding: 3px; }
+
+.conteiner-his {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .conteiner-his h1 {
+    color: #ffc107; }
+  .conteiner-his p {
+    padding: 20px;
+    border: 0.5px #ffc107 solid;
+    background-color: whitesmoke; }
+
 * {
   margin: 0;
   padding: 0;

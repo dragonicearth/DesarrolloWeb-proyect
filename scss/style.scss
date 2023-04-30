@@ -1,4 +1,4 @@
-@import "components/variables";
+@import "components/variables","./components/about";
 
 // style general
 * {
@@ -155,6 +155,7 @@ body {
         border: 1px $c-org solid;
         color: $c-org;
     }
+
 
 
 
